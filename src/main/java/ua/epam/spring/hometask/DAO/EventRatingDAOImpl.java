@@ -6,8 +6,8 @@ import java.util.List;
 
 public class EventRatingDAOImpl implements  DAO<EventRating> {
     @Override
-    public EventRating create(EventRating entity) {
-return null;
+    public void save(EventRating entity) {
+
     }
 
     @Override
@@ -16,12 +16,12 @@ return null;
     }
 
     @Override
-    public void delete(EventRating entity) {
+    public void remove(EventRating entity) {
 
     }
 
     @Override
-    public EventRating findById(Integer id) {
+    public EventRating getById(Integer id) {
         return null;
     }
 

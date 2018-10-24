@@ -6,8 +6,7 @@ import java.util.List;
 
 public class EventDAOImpl implements DAO <Event> {
     @Override
-    public Event create(Event entity) {
-return null;
+    public void save(Event entity) {
     }
 
     @Override
@@ -16,12 +15,12 @@ return null;
     }
 
     @Override
-    public void delete(Event entity) {
+    public void remove(Event entity) {
 
     }
 
     @Override
-    public Event findById(Integer id) {
+    public Event getById(Integer id) {
         return null;
     }
 

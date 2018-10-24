@@ -28,7 +28,7 @@ public class UserServiceImpl implements UserService {
         return null;
     }
 
-    @Nonnull
+       @Nonnull
     @Override
     public Collection<User> getAll() {
         return null;

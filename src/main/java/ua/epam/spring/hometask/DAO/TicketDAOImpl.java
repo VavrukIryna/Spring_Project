@@ -6,7 +6,7 @@ import java.util.List;
 
 public class TicketDAOImpl implements  DAO<Ticket>{
     @Override
-    public Ticket create(Ticket entity) {
+    public Ticket save(Ticket entity) {
 return null;
     }
 
@@ -16,12 +16,12 @@ return null;
     }
 
     @Override
-    public void delete(Ticket entity) {
+    public void remove(Ticket entity) {
 
     }
 
     @Override
-    public Ticket findById(Integer id) {
+    public Ticket getById(Integer id) {
         return null;
     }
 

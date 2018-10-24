@@ -9,12 +9,12 @@ import java.util.Map;
 
 public class AuditoriumDAOImpl implements DAO<Auditorium> {
     @Override
-    public Auditorium create(Auditorium auditorium) {
+    public void save(Auditorium auditorium) {
         Map m = new HashMap<>();
         m.put("name",auditorium.getName());
         m.put("numberOfseats", auditorium.getNumberOfSeats());
         m.put("vipSeats", auditorium.getVipSeats());
-        return auditorium;
+       // return auditorium;
     }
 
     @Override
@@ -23,12 +23,12 @@ public class AuditoriumDAOImpl implements DAO<Auditorium> {
     }
 
     @Override
-    public void delete(Auditorium auditorium) {
+    public void remove(Auditorium auditorium) {
 
     }
 
     @Override
-    public Auditorium findById(Integer id) {
+    public Auditorium getById(Integer id) {
         return null;
     }
 

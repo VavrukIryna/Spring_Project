@@ -6,8 +6,8 @@ import java.util.List;
 
 public class DomainObjectDAOImpl implements  DAO<DomainObject> {
     @Override
-    public DomainObject create(DomainObject entity) {
-return null;
+    public void save(DomainObject entity) {
+
     }
 
     @Override
@@ -16,12 +16,12 @@ return null;
     }
 
     @Override
-    public void delete(DomainObject entity) {
+    public void remove(DomainObject entity) {
 
     }
 
     @Override
-    public DomainObject findById(Integer id) {
+    public DomainObject getById(Integer id) {
         return null;
     }
 
