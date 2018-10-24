@@ -35,7 +35,7 @@ public class AuditoriumDAOImpl implements DAO<Auditorium> {
     @Override
     public List<Auditorium> findAll() {
         List<Auditorium> auditoriumList = new ArrayList<>();
-
+return null;
 
 
 

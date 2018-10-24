@@ -33,4 +33,12 @@ public class EventServiceImpl implements EventService {
     public Collection<Event> getAll() {
         return null;
     }
+    //todo: add date from and date to
+    public Event getForDateRange(){
+        return null;
+    }
+    //todo: add date  to
+    public Event hetPurchasedTicketForEvent(){
+        return null;
+    }
 }
