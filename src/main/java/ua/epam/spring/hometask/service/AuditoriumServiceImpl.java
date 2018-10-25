@@ -21,7 +21,7 @@ public class AuditoriumServiceImpl implements AuditoriumService {
         auditorium.setNumberOfSeats(10);
         auditorium.setVipSeats(Stream.of(1L,2L,3L).collect(Collectors.toSet()));
 
-        Auditorium insertedAuditorium = auditoriumDAO.create(auditorium);
+        Auditorium insertedAuditorium = auditoriumDAO.save(auditorium);
         System.out.println("______________________________");
         System.out.println("read all data from Auditorium");
         System.out.println("______________________________");

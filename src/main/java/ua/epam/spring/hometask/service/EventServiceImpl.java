@@ -24,7 +24,7 @@ public class EventServiceImpl implements EventService {
     }
 
     @Override
-    public Event getById(@Nonnull Long id) {
+    public Event getById(@Nonnull Integer id) {
         return null;
     }
 

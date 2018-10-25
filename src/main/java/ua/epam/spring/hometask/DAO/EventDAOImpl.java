@@ -6,7 +6,8 @@ import java.util.List;
 
 public class EventDAOImpl implements DAO <Event> {
     @Override
-    public void save(Event entity) {
+    public Event save(Event entity) {
+        return null;
     }
 
     @Override

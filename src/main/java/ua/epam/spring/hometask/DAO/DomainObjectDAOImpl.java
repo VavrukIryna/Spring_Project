@@ -6,7 +6,8 @@ import java.util.List;
 
 public class DomainObjectDAOImpl implements  DAO<DomainObject> {
     @Override
-    public void save(DomainObject entity) {
+    public DomainObject save(DomainObject entity) {
+        return null;
 
     }
 
