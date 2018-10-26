@@ -36,7 +36,8 @@ public class App {
 
         System.out.println("App used");
 
-        ApplicationContext ctx = new ClassPathXmlApplicationContext("spring.xml");
+       // ApplicationContext ctx = new ClassPathXmlApplicationContext("classpath:resources/spring.xml");
+        ApplicationContext ctx = new ClassPathXmlApplicationContext("file:src/main/resources/spring.xml");
         App app = (App)ctx.getBean("app");
 
 
