@@ -21,22 +21,28 @@ public class EventDAOImpl implements DAO <Event> {
         System.out.println("Event was removed by EventDao class");
     }
 
-    @Override
-    public void update(Event entity) {
-     /*   eventList.get(entity.getId()).getAuditoriums(entity.getAuditoriums());
-        eventList.get(entity.getId()).setLastName(user.getLastName());
-        eventList.get(entity.getId()).setEmail(user.getEmail());
-        eventList.get(entity.getId()).setTickets(user.getTickets());
-        System.out.println("User was updated by UserDao class");*/
-    }
+
 
     @Override
     public Event getById(Integer id) {
-        return null;
+        return eventList.get(id);
+    }
+
+    public Event getByName(String name) {
+        Event concreteEvent= null;
+        int len =eventList.size();
+        for(int i=0; i<len; i++) {
+            if(eventList.get(i).getName().contains(name)){
+                System.out.println("Event "+ eventList.get(i)+"find with name"+ name);
+                concreteEvent = eventList.get(i);
+            }
+
+        }
+        return concreteEvent;
     }
 
     @Override
     public List<Event> findAll() {
-        return null;
+        return eventList;
     }
 }

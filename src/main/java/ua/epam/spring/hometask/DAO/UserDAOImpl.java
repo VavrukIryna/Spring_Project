@@ -18,7 +18,7 @@ public class UserDAOImpl implements DAO<User> {
         return user;
     }
 
-    @Override
+
     public void update(User user) {
         userList.get(user.getId()).setFirstName(user.getFirstName());
         userList.get(user.getId()).setLastName(user.getLastName());
@@ -40,14 +40,15 @@ public class UserDAOImpl implements DAO<User> {
     }
 
     public User getByEmail(String email) {
+        User concreteUser = null;
         int len=userList.size();
         for(int i=0; i<len; i++) {
                if(userList.get(i).getEmail().contains(email)){
                    System.out.println("User"+ userList.get(i)+"find with email"+ email);
-                   return userList.get(i);
+                   concreteUser = userList.get(i);
                }
         }
-        return null;
+        return concreteUser;
     }
 
 

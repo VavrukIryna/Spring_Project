@@ -15,6 +15,7 @@
 
       <bean id="app" class="ua.epam.spring.hometask.App" >
         <constructor-arg ref = "user"/>
+
     </bean>
 
 

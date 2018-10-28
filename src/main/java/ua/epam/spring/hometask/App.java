@@ -3,8 +3,10 @@ package ua.epam.spring.hometask;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 import ua.epam.spring.hometask.domain.Auditorium;
+import ua.epam.spring.hometask.domain.Event;
 import ua.epam.spring.hometask.domain.User;
 import ua.epam.spring.hometask.service.AuditoriumServiceImpl;
+import ua.epam.spring.hometask.service.EventServiceImpl;
 import ua.epam.spring.hometask.service.UserService;
 import ua.epam.spring.hometask.service.UserServiceImpl;
 
@@ -17,6 +19,8 @@ public class App {
 
     User user;
     List<User> userList = new ArrayList<>();
+    Event event;
+    List<Event> eventList = new ArrayList<>();
     public App(){}
 
     public App (User user){
@@ -55,5 +59,16 @@ public class App {
         System.out.println(userService.getById(0));
         System.out.println("get user by email");
         System.out.println(userService.getUserByEmail("Bean email"));
-    }
+
+
+
+     /*   System.out.println("event email");
+        System.out.println(app.event.getName());
+        EventServiceImpl eventService = new EventServiceImpl();
+        eventService.save(app.event);
+        System.out.println("get event by id");
+        System.out.println(eventService.getById(0));
+        System.out.println("get event by name");
+        System.out.println(eventService.getByName("First Bean Name"));
+    */}
 }
